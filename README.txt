@@ -58,13 +58,13 @@ DEVELOPMENT NOTES
 
 [CURRENT UPDATE]
 
-ALPHA 0.0.000.0001
+ALPHA 0.0.000.0001 / Getting Started
 
 - initial build
 - built main menu with key components
 - added active user account name to ui with option to log in
 - added login popup with username and password
 - added encryption for password
-- added ability to query the ctg online server for authenication (encrypted)
+- added ability to query the ctg online server for authentication (encrypted)
 
 =============================================
