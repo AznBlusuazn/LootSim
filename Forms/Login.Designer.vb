@@ -28,7 +28,8 @@ Partial Class Login
         Me.TitleBarLabel = New System.Windows.Forms.Label()
         Me.BackgroundPanel = New System.Windows.Forms.Panel()
         Me.MainPanel = New System.Windows.Forms.Panel()
-        Me.CancelButton = New System.Windows.Forms.Button()
+        Me.InfoLabel = New System.Windows.Forms.Label()
+        Me.DeclineButton = New System.Windows.Forms.Button()
         Me.LoginButton = New System.Windows.Forms.Button()
         Me.PassText = New System.Windows.Forms.TextBox()
         Me.UserText = New System.Windows.Forms.TextBox()
@@ -105,7 +106,8 @@ Partial Class Login
         'MainPanel
         '
         Me.MainPanel.BackColor = System.Drawing.Color.Navy
-        Me.MainPanel.Controls.Add(Me.CancelButton)
+        Me.MainPanel.Controls.Add(Me.InfoLabel)
+        Me.MainPanel.Controls.Add(Me.DeclineButton)
         Me.MainPanel.Controls.Add(Me.LoginButton)
         Me.MainPanel.Controls.Add(Me.PassText)
         Me.MainPanel.Controls.Add(Me.UserText)
@@ -116,15 +118,24 @@ Partial Class Login
         Me.MainPanel.Size = New System.Drawing.Size(280, 252)
         Me.MainPanel.TabIndex = 0
         '
-        'CancelButton
+        'InfoLabel
         '
-        Me.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CancelButton.Location = New System.Drawing.Point(142, 174)
-        Me.CancelButton.Name = "CancelButton"
-        Me.CancelButton.Size = New System.Drawing.Size(100, 23)
-        Me.CancelButton.TabIndex = 16
-        Me.CancelButton.Text = "Cancel"
-        Me.CancelButton.UseVisualStyleBackColor = True
+        Me.InfoLabel.Location = New System.Drawing.Point(0, 120)
+        Me.InfoLabel.Name = "InfoLabel"
+        Me.InfoLabel.Size = New System.Drawing.Size(278, 41)
+        Me.InfoLabel.TabIndex = 17
+        Me.InfoLabel.Text = "Please Login"
+        Me.InfoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DeclineButton
+        '
+        Me.DeclineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeclineButton.Location = New System.Drawing.Point(142, 174)
+        Me.DeclineButton.Name = "DeclineButton"
+        Me.DeclineButton.Size = New System.Drawing.Size(100, 23)
+        Me.DeclineButton.TabIndex = 16
+        Me.DeclineButton.Text = "Cancel"
+        Me.DeclineButton.UseVisualStyleBackColor = True
         '
         'LoginButton
         '
@@ -140,7 +151,7 @@ Partial Class Login
         '
         Me.PassText.BackColor = System.Drawing.Color.WhiteSmoke
         Me.PassText.ForeColor = System.Drawing.Color.Black
-        Me.PassText.Location = New System.Drawing.Point(105, 107)
+        Me.PassText.Location = New System.Drawing.Point(105, 87)
         Me.PassText.MaxLength = 64
         Me.PassText.Name = "PassText"
         Me.PassText.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -151,7 +162,7 @@ Partial Class Login
         '
         Me.UserText.BackColor = System.Drawing.Color.WhiteSmoke
         Me.UserText.ForeColor = System.Drawing.Color.Black
-        Me.UserText.Location = New System.Drawing.Point(105, 72)
+        Me.UserText.Location = New System.Drawing.Point(105, 52)
         Me.UserText.MaxLength = 64
         Me.UserText.Name = "UserText"
         Me.UserText.Size = New System.Drawing.Size(153, 20)
@@ -159,7 +170,7 @@ Partial Class Login
         '
         'PassLabel
         '
-        Me.PassLabel.Location = New System.Drawing.Point(11, 110)
+        Me.PassLabel.Location = New System.Drawing.Point(11, 90)
         Me.PassLabel.Name = "PassLabel"
         Me.PassLabel.Size = New System.Drawing.Size(88, 13)
         Me.PassLabel.TabIndex = 1
@@ -168,7 +179,7 @@ Partial Class Login
         '
         'UserLabel
         '
-        Me.UserLabel.Location = New System.Drawing.Point(11, 75)
+        Me.UserLabel.Location = New System.Drawing.Point(11, 55)
         Me.UserLabel.Name = "UserLabel"
         Me.UserLabel.Size = New System.Drawing.Size(88, 13)
         Me.UserLabel.TabIndex = 0
@@ -213,6 +224,7 @@ Partial Class Login
     Friend WithEvents UserText As TextBox
     Friend WithEvents PassLabel As Label
     Friend WithEvents UserLabel As Label
-    Friend WithEvents CancelButton As Button
+    Friend WithEvents DeclineButton As Button
     Friend WithEvents LoginButton As Button
+    Friend WithEvents InfoLabel As Label
 End Class

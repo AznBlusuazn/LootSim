@@ -5,7 +5,7 @@
     Private Sub CTGLabel_Click(sender As Object, e As EventArgs) Handles CTGLabel.Click
         ClarkTribeGames.Web.CTG()
     End Sub
-    Private Sub CreditsLabel_Click(sender As Object, e As EventArgs) Handles CreditsLabel.Click
+    Private Sub CreditsLabel_Click(sender As Object, e As EventArgs) Handles LoginLabel.Click
         Login.ShowDialog()
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click

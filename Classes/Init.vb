@@ -8,6 +8,7 @@
         Mem.AllMagic = TheDagger.DecryptData(Baelfire)
         'add load from save data
         'add username/password check - if empty or wrong, no user logged in - if correct user loaded
+        Login.LoginCheck()
         '3 buttons are temporarily disabled
         Appearance.FlipButton(False, MainMenu.StartButton)
         Appearance.FlipButton(False, MainMenu.AboutButton)

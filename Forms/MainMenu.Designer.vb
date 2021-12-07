@@ -28,6 +28,7 @@ Partial Class MainMenu
         Me.TitleBarLabel = New System.Windows.Forms.Label()
         Me.BackgroundPanel = New System.Windows.Forms.Panel()
         Me.MainPanel = New System.Windows.Forms.Panel()
+        Me.CreditsLabel = New System.Windows.Forms.Label()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.AboutButton = New System.Windows.Forms.Button()
         Me.OptionsButton = New System.Windows.Forms.Button()
@@ -35,7 +36,7 @@ Partial Class MainMenu
         Me.CTGLabel = New System.Windows.Forms.Label()
         Me.VersionLabel = New System.Windows.Forms.Label()
         Me.TitleLabel = New System.Windows.Forms.Label()
-        Me.CreditsLabel = New System.Windows.Forms.Label()
+        Me.LoginLabel = New System.Windows.Forms.Label()
         Me.UserLabel = New System.Windows.Forms.Label()
         Me.TitleBarPanel.SuspendLayout()
         Me.CloseButton.SuspendLayout()
@@ -108,6 +109,7 @@ Partial Class MainMenu
         'MainPanel
         '
         Me.MainPanel.BackColor = System.Drawing.Color.Navy
+        Me.MainPanel.Controls.Add(Me.CreditsLabel)
         Me.MainPanel.Controls.Add(Me.ExitButton)
         Me.MainPanel.Controls.Add(Me.AboutButton)
         Me.MainPanel.Controls.Add(Me.OptionsButton)
@@ -115,12 +117,22 @@ Partial Class MainMenu
         Me.MainPanel.Controls.Add(Me.CTGLabel)
         Me.MainPanel.Controls.Add(Me.VersionLabel)
         Me.MainPanel.Controls.Add(Me.TitleLabel)
-        Me.MainPanel.Controls.Add(Me.CreditsLabel)
+        Me.MainPanel.Controls.Add(Me.LoginLabel)
         Me.MainPanel.Controls.Add(Me.UserLabel)
         Me.MainPanel.Location = New System.Drawing.Point(5, 35)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Size = New System.Drawing.Size(766, 510)
         Me.MainPanel.TabIndex = 0
+        '
+        'CreditsLabel
+        '
+        Me.CreditsLabel.ForeColor = System.Drawing.Color.DarkGreen
+        Me.CreditsLabel.Location = New System.Drawing.Point(381, 471)
+        Me.CreditsLabel.Name = "CreditsLabel"
+        Me.CreditsLabel.Size = New System.Drawing.Size(380, 13)
+        Me.CreditsLabel.TabIndex = 18
+        Me.CreditsLabel.Text = "[Login To See Credits]"
+        Me.CreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'ExitButton
         '
@@ -193,19 +205,19 @@ Partial Class MainMenu
         Me.TitleLabel.Text = "LootSimGraphicHere"
         Me.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'CreditsLabel
+        'LoginLabel
         '
-        Me.CreditsLabel.ForeColor = System.Drawing.Color.DarkGreen
-        Me.CreditsLabel.Location = New System.Drawing.Point(384, 491)
-        Me.CreditsLabel.Name = "CreditsLabel"
-        Me.CreditsLabel.Size = New System.Drawing.Size(380, 13)
-        Me.CreditsLabel.TabIndex = 10
-        Me.CreditsLabel.Text = "Log In With CTG Account"
-        Me.CreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LoginLabel.ForeColor = System.Drawing.Color.DarkSalmon
+        Me.LoginLabel.Location = New System.Drawing.Point(384, 491)
+        Me.LoginLabel.Name = "LoginLabel"
+        Me.LoginLabel.Size = New System.Drawing.Size(380, 13)
+        Me.LoginLabel.TabIndex = 10
+        Me.LoginLabel.Text = "Log In With CTG Account"
+        Me.LoginLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'UserLabel
         '
-        Me.UserLabel.Location = New System.Drawing.Point(384, 471)
+        Me.UserLabel.Location = New System.Drawing.Point(384, 451)
         Me.UserLabel.Name = "UserLabel"
         Me.UserLabel.Size = New System.Drawing.Size(380, 13)
         Me.UserLabel.TabIndex = 9
@@ -250,6 +262,7 @@ Partial Class MainMenu
     Friend WithEvents CTGLabel As Label
     Friend WithEvents VersionLabel As Label
     Friend WithEvents TitleLabel As Label
-    Friend WithEvents CreditsLabel As Label
+    Friend WithEvents LoginLabel As Label
     Friend WithEvents UserLabel As Label
+    Friend WithEvents CreditsLabel As Label
 End Class

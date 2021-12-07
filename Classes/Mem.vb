@@ -6,9 +6,13 @@
     Public Shared MainBackColor As Color = Color.Navy
     Public Shared MainForeColor As Color = Color.WhiteSmoke
     Public Shared DisabledBack As Color = Color.DimGray
+    Public Shared AllMagic As String = "fIBSr7Y4qsLLTsrN18y3c6mFJwX7udEgB3FAL7VtianboGt/uc+PDHE4pNVhvm/r"
+    Public Shared ReadOnly UserDB As String = "lootsimuser"
+    Public Shared ReadOnly StoreDB As String = "lootsimmarket"
 
-    'Other
+    'UserInfo
     Public Shared UserName As String = ""
     Public Shared Passcode As String = ""
-    Public Shared AllMagic As String = "dQZ1AxuTQMmPdMjTuoRIHK90p/g4e3slNNQLnFy5lpgQ4bLlgMlqQw=="
+    'un, uid, credits, first, last, refresh, inv, status
+    Public Shared UserStats As String()
 End Class

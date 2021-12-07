@@ -1,7 +1,7 @@
 =============================================
 LOOTSIM by Geoff Clark
 PUBLISHED by CLARKTRIBEGAMES LLC
-VERSION ALPHA 0.0.000.0001
+VERSION ALPHA 0.0.000.0002
 =============================================
 
 SUPPORT THE DEVELOPMENT OF THIS GAME @ 
@@ -58,7 +58,7 @@ DEVELOPMENT NOTES
 
 [CURRENT UPDATE]
 
-ALPHA 0.0.000.0001 / Getting Started
+ALPHA 0.0.000.0002 / Getting Started
 
 - initial build
 - built main menu with key components
@@ -66,5 +66,11 @@ ALPHA 0.0.000.0001 / Getting Started
 - added login popup with username and password
 - added encryption for password
 - added ability to query the ctg online server for authentication (encrypted)
+- added userdb and lootsimuser db to cloud db server
+- corrected encryption issue
+- added login function with verified/denied login from server
+- added credits text for main menu
+- finished login function with error handling
+- added message box for login status to notify users of issues
 
 =============================================
