@@ -9,10 +9,12 @@
     Public Shared AllMagic As String = "fIBSr7Y4qsLLTsrN18y3c6mFJwX7udEgB3FAL7VtianboGt/uc+PDHE4pNVhvm/r"
     Public Shared ReadOnly UserDB As String = "lootsimuser"
     Public Shared ReadOnly StoreDB As String = "lootsimmarket"
+    Public Shared ReadOnly InvDB As String = "lootsiminv"
+    Public Shared ReadOnly Settings As String = "settings.cfg"
 
     'UserInfo
     Public Shared UserName As String = ""
     Public Shared Passcode As String = ""
-    'un, uid, credits, first, last, refresh, inv, status
+    'un, uid, credits, first, last, refresh, inv, checks, status
     Public Shared UserStats As String()
 End Class

@@ -9,7 +9,7 @@
         Login.ShowDialog()
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
-
+        User.ShowDialog()
     End Sub
     Private Sub OptionsButton_Click(sender As Object, e As EventArgs) Handles OptionsButton.Click
 
@@ -33,6 +33,12 @@
     End Sub
     Private Sub TitleBar_MouseUp(sender As Object, e As MouseEventArgs) Handles TitleBarPanel.MouseUp, TitleBarLabel.MouseUp
         Mem.WindowDrag = False
+    End Sub
+    Private Sub UserLabel_Click(sender As Object, e As EventArgs) Handles UserLabel.TextChanged
+        CheckStartButton()
+    End Sub
+    Public Sub CheckStartButton()
+        If Not UserLabel.Text = "[Not Logged In]" Then Appearance.FlipButton(True, StartButton) Else Appearance.FlipButton(False, StartButton)
     End Sub
 
 End Class

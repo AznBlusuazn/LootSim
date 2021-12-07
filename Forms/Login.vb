@@ -25,6 +25,9 @@
         Mem.WindowDrag = False
     End Sub
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
+        LoginProcess()
+    End Sub
+    Public Sub LoginProcess()
         Mem.UserName = UserText.Text
         Dim Wrapper As New ClarkTribeGames.Coder(Mem.AllMagic)
         Mem.Passcode = Wrapper.EncryptData(PassText.Text)
@@ -74,6 +77,7 @@
                 InfoLabel.ForeColor = Color.Green
             End If
         End If
+        Init.WriteSettings()
         PassText.Text = ""
         Mem.Passcode = ""
     End Sub
@@ -82,8 +86,8 @@
         If ClarkTribeGames.MySQLReader.Free(0, "SELECT uid FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';").Length = 0 Then
             Dim timestamp As String = DateTime.Now.ToString("yyyy`-`MM`-`dd HH`:`mm`:`ss")
             ClarkTribeGames.MySQLReader.Free(1, "INSERT INTO " & Mem.UserDB &
-                " (`uid`, `credits`, `firstlogon`, `lastlogon`, `lastrefresh`, `inventory`, `status`) VALUES ('" &
-                uid & "','0','" & timestamp & "','" & timestamp & "','" & timestamp & "',' ','0');")
+                " (`uid`, `credits`, `firstlogon`, `lastlogon`, `lastrefresh`, `inventory`, `checks`, `status`) VALUES ('" &
+                uid & "','0','" & timestamp & "','" & timestamp & "','" & timestamp & "',' ','0','0');")
         End If
         If ClarkTribeGames.MySQLReader.Free(0, "SELECT status FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';") = "1" Then Return False
         ClarkTribeGames.MySQLReader.Free(1, "UPDATE " & Mem.UserDB & " SET lastlogon = '" & DateTime.Now.ToString("yyyy`-`MM`-`dd HH`:`mm`:`ss") &
@@ -93,6 +97,7 @@
             ClarkTribeGames.MySQLReader.Free(0, "SELECT lastlogon FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';"),
             ClarkTribeGames.MySQLReader.Free(0, "SELECT lastrefresh FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';"),
             ClarkTribeGames.MySQLReader.Free(0, "SELECT inventory FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';"),
+            ClarkTribeGames.MySQLReader.Free(0, "SELECT checks FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';"),
             ClarkTribeGames.MySQLReader.Free(0, "SELECT status FROM " & Mem.UserDB & " WHERE uid = '" & uid & "';")}
         Return True
     End Function

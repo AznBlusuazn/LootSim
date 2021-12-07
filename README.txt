@@ -1,7 +1,7 @@
 =============================================
 LOOTSIM by Geoff Clark
 PUBLISHED by CLARKTRIBEGAMES LLC
-VERSION ALPHA 0.0.000.0002
+VERSION ALPHA 0.0.000.0003
 =============================================
 
 SUPPORT THE DEVELOPMENT OF THIS GAME @ 
@@ -58,7 +58,7 @@ DEVELOPMENT NOTES
 
 [CURRENT UPDATE]
 
-ALPHA 0.0.000.0002 / Getting Started
+ALPHA 0.0.000.0003 / Getting Started
 
 - initial build
 - built main menu with key components
@@ -72,5 +72,8 @@ ALPHA 0.0.000.0002 / Getting Started
 - added credits text for main menu
 - finished login function with error handling
 - added message box for login status to notify users of issues
+- added settings.cfg for retaining username login (encrypted)
+- added check if login information in save data is accurate or not
+- added user panel for viewing user information and inventory
 
 =============================================
