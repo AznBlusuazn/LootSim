@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class User
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Sell
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class User
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TitleBarPanel = New System.Windows.Forms.Panel()
         Me.CloseButton = New System.Windows.Forms.Panel()
@@ -28,14 +28,17 @@ Partial Class User
         Me.TitleBarLabel = New System.Windows.Forms.Label()
         Me.BackgroundPanel = New System.Windows.Forms.Panel()
         Me.MainPanel = New System.Windows.Forms.Panel()
+        Me.QText = New System.Windows.Forms.TextBox()
+        Me.QLabel = New System.Windows.Forms.Label()
+        Me.SaleText = New System.Windows.Forms.TextBox()
+        Me.SaleLabel = New System.Windows.Forms.Label()
+        Me.StatusLabel = New System.Windows.Forms.Label()
+        Me.UnText = New System.Windows.Forms.Label()
+        Me.SellLabel = New System.Windows.Forms.Label()
         Me.PriceText = New System.Windows.Forms.Label()
-        Me.PriceLabel = New System.Windows.Forms.Label()
         Me.LootAvatar = New System.Windows.Forms.PictureBox()
-        Me.UserAvatar = New System.Windows.Forms.PictureBox()
-        Me.ReturnButton = New System.Windows.Forms.Button()
-        Me.MarketButton = New System.Windows.Forms.Button()
-        Me.TrButton = New System.Windows.Forms.Button()
-        Me.SeButton = New System.Windows.Forms.Button()
+        Me.CSellButton = New System.Windows.Forms.Button()
+        Me.SaleButton = New System.Windows.Forms.Button()
         Me.OwnText = New System.Windows.Forms.Label()
         Me.OwnLabel = New System.Windows.Forms.Label()
         Me.StLabel = New System.Windows.Forms.Label()
@@ -44,20 +47,16 @@ Partial Class User
         Me.FirstText = New System.Windows.Forms.Label()
         Me.DescText = New System.Windows.Forms.TextBox()
         Me.ItemText = New System.Windows.Forms.Label()
-        Me.GoButton = New System.Windows.Forms.Button()
-        Me.InvList = New System.Windows.Forms.ListBox()
-        Me.CheckButton = New System.Windows.Forms.Button()
-        Me.ChText = New System.Windows.Forms.Label()
-        Me.ChLabel = New System.Windows.Forms.Label()
         Me.CrText = New System.Windows.Forms.TextBox()
         Me.CrLabel = New System.Windows.Forms.Label()
-        Me.UnText = New System.Windows.Forms.Label()
+        Me.PriceLabel = New System.Windows.Forms.Label()
+        Me.SPText = New System.Windows.Forms.TextBox()
+        Me.SPLabel = New System.Windows.Forms.Label()
         Me.TitleBarPanel.SuspendLayout()
         Me.CloseButton.SuspendLayout()
         Me.BackgroundPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         CType(Me.LootAvatar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UserAvatar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TitleBarPanel
@@ -70,8 +69,8 @@ Partial Class User
         Me.TitleBarPanel.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.TitleBarPanel.Location = New System.Drawing.Point(0, 0)
         Me.TitleBarPanel.Name = "TitleBarPanel"
-        Me.TitleBarPanel.Size = New System.Drawing.Size(747, 30)
-        Me.TitleBarPanel.TabIndex = 10
+        Me.TitleBarPanel.Size = New System.Drawing.Size(698, 30)
+        Me.TitleBarPanel.TabIndex = 11
         '
         'CloseButton
         '
@@ -79,7 +78,7 @@ Partial Class User
         Me.CloseButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CloseButton.Controls.Add(Me.CloseText)
         Me.CloseButton.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.CloseButton.Location = New System.Drawing.Point(722, 4)
+        Me.CloseButton.Location = New System.Drawing.Point(669, 4)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.Size = New System.Drawing.Size(20, 17)
         Me.CloseButton.TabIndex = 2
@@ -106,9 +105,9 @@ Partial Class User
         Me.TitleBarLabel.Location = New System.Drawing.Point(0, 3)
         Me.TitleBarLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.TitleBarLabel.Name = "TitleBarLabel"
-        Me.TitleBarLabel.Size = New System.Drawing.Size(743, 20)
+        Me.TitleBarLabel.Size = New System.Drawing.Size(689, 20)
         Me.TitleBarLabel.TabIndex = 0
-        Me.TitleBarLabel.Text = "LootSim User Panel"
+        Me.TitleBarLabel.Text = "LootSim Sell Panel"
         Me.TitleBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BackgroundPanel
@@ -119,20 +118,25 @@ Partial Class User
         Me.BackgroundPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BackgroundPanel.Location = New System.Drawing.Point(0, 30)
         Me.BackgroundPanel.Name = "BackgroundPanel"
-        Me.BackgroundPanel.Size = New System.Drawing.Size(747, 438)
-        Me.BackgroundPanel.TabIndex = 11
+        Me.BackgroundPanel.Size = New System.Drawing.Size(698, 233)
+        Me.BackgroundPanel.TabIndex = 12
         '
         'MainPanel
         '
         Me.MainPanel.BackColor = System.Drawing.Color.Navy
+        Me.MainPanel.Controls.Add(Me.SPLabel)
+        Me.MainPanel.Controls.Add(Me.SPText)
+        Me.MainPanel.Controls.Add(Me.QText)
+        Me.MainPanel.Controls.Add(Me.QLabel)
+        Me.MainPanel.Controls.Add(Me.SaleText)
+        Me.MainPanel.Controls.Add(Me.SaleLabel)
+        Me.MainPanel.Controls.Add(Me.StatusLabel)
+        Me.MainPanel.Controls.Add(Me.UnText)
+        Me.MainPanel.Controls.Add(Me.SellLabel)
         Me.MainPanel.Controls.Add(Me.PriceText)
-        Me.MainPanel.Controls.Add(Me.PriceLabel)
         Me.MainPanel.Controls.Add(Me.LootAvatar)
-        Me.MainPanel.Controls.Add(Me.UserAvatar)
-        Me.MainPanel.Controls.Add(Me.ReturnButton)
-        Me.MainPanel.Controls.Add(Me.MarketButton)
-        Me.MainPanel.Controls.Add(Me.TrButton)
-        Me.MainPanel.Controls.Add(Me.SeButton)
+        Me.MainPanel.Controls.Add(Me.CSellButton)
+        Me.MainPanel.Controls.Add(Me.SaleButton)
         Me.MainPanel.Controls.Add(Me.OwnText)
         Me.MainPanel.Controls.Add(Me.OwnLabel)
         Me.MainPanel.Controls.Add(Me.StLabel)
@@ -141,102 +145,127 @@ Partial Class User
         Me.MainPanel.Controls.Add(Me.FirstText)
         Me.MainPanel.Controls.Add(Me.DescText)
         Me.MainPanel.Controls.Add(Me.ItemText)
-        Me.MainPanel.Controls.Add(Me.GoButton)
-        Me.MainPanel.Controls.Add(Me.InvList)
-        Me.MainPanel.Controls.Add(Me.CheckButton)
-        Me.MainPanel.Controls.Add(Me.ChText)
-        Me.MainPanel.Controls.Add(Me.ChLabel)
         Me.MainPanel.Controls.Add(Me.CrText)
         Me.MainPanel.Controls.Add(Me.CrLabel)
-        Me.MainPanel.Controls.Add(Me.UnText)
+        Me.MainPanel.Controls.Add(Me.PriceLabel)
         Me.MainPanel.Location = New System.Drawing.Point(5, 6)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(730, 421)
+        Me.MainPanel.Size = New System.Drawing.Size(683, 218)
         Me.MainPanel.TabIndex = 1
+        '
+        'QText
+        '
+        Me.QText.BackColor = System.Drawing.Color.Navy
+        Me.QText.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.QText.Location = New System.Drawing.Point(558, 108)
+        Me.QText.MaxLength = 64
+        Me.QText.Name = "QText"
+        Me.QText.Size = New System.Drawing.Size(119, 20)
+        Me.QText.TabIndex = 43
+        Me.QText.Text = "###"
+        Me.QText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'QLabel
+        '
+        Me.QLabel.ForeColor = System.Drawing.Color.DarkOrchid
+        Me.QLabel.Location = New System.Drawing.Point(455, 111)
+        Me.QLabel.Name = "QLabel"
+        Me.QLabel.Size = New System.Drawing.Size(97, 13)
+        Me.QLabel.TabIndex = 42
+        Me.QLabel.Text = "Quantity:"
+        Me.QLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'SaleText
+        '
+        Me.SaleText.BackColor = System.Drawing.Color.Navy
+        Me.SaleText.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.SaleText.Location = New System.Drawing.Point(558, 82)
+        Me.SaleText.MaxLength = 64
+        Me.SaleText.Name = "SaleText"
+        Me.SaleText.Size = New System.Drawing.Size(119, 20)
+        Me.SaleText.TabIndex = 41
+        Me.SaleText.Text = "###"
+        Me.SaleText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'SaleLabel
+        '
+        Me.SaleLabel.ForeColor = System.Drawing.Color.DeepPink
+        Me.SaleLabel.Location = New System.Drawing.Point(455, 85)
+        Me.SaleLabel.Name = "SaleLabel"
+        Me.SaleLabel.Size = New System.Drawing.Size(97, 13)
+        Me.SaleLabel.TabIndex = 40
+        Me.SaleLabel.Text = "Sell Price:"
+        Me.SaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'StatusLabel
+        '
+        Me.StatusLabel.Location = New System.Drawing.Point(341, 189)
+        Me.StatusLabel.Name = "StatusLabel"
+        Me.StatusLabel.Size = New System.Drawing.Size(209, 13)
+        Me.StatusLabel.TabIndex = 39
+        Me.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'UnText
+        '
+        Me.UnText.Location = New System.Drawing.Point(452, 7)
+        Me.UnText.Name = "UnText"
+        Me.UnText.Size = New System.Drawing.Size(225, 13)
+        Me.UnText.TabIndex = 38
+        Me.UnText.Text = "[username]"
+        Me.UnText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SellLabel
+        '
+        Me.SellLabel.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SellLabel.ForeColor = System.Drawing.Color.Lime
+        Me.SellLabel.Location = New System.Drawing.Point(452, 62)
+        Me.SellLabel.Name = "SellLabel"
+        Me.SellLabel.Size = New System.Drawing.Size(225, 13)
+        Me.SellLabel.TabIndex = 37
+        Me.SellLabel.Text = "Sell on the Marketplace!"
         '
         'PriceText
         '
-        Me.PriceText.Location = New System.Drawing.Point(581, 343)
+        Me.PriceText.Location = New System.Drawing.Point(288, 135)
         Me.PriceText.Name = "PriceText"
         Me.PriceText.Size = New System.Drawing.Size(138, 13)
         Me.PriceText.TabIndex = 36
         Me.PriceText.Text = "###"
         Me.PriceText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PriceLabel
-        '
-        Me.PriceLabel.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PriceLabel.ForeColor = System.Drawing.Color.Lime
-        Me.PriceLabel.Location = New System.Drawing.Point(491, 341)
-        Me.PriceLabel.Name = "PriceLabel"
-        Me.PriceLabel.Size = New System.Drawing.Size(87, 13)
-        Me.PriceLabel.TabIndex = 35
-        Me.PriceLabel.Text = "Est. Value:"
-        Me.PriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
         'LootAvatar
         '
         Me.LootAvatar.BackColor = System.Drawing.Color.Black
         Me.LootAvatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.LootAvatar.Location = New System.Drawing.Point(520, 7)
+        Me.LootAvatar.Location = New System.Drawing.Point(8, 7)
         Me.LootAvatar.Name = "LootAvatar"
         Me.LootAvatar.Size = New System.Drawing.Size(200, 200)
         Me.LootAvatar.TabIndex = 34
         Me.LootAvatar.TabStop = False
         '
-        'UserAvatar
+        'CSellButton
         '
-        Me.UserAvatar.BackColor = System.Drawing.Color.Black
-        Me.UserAvatar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.UserAvatar.Location = New System.Drawing.Point(5, 5)
-        Me.UserAvatar.Name = "UserAvatar"
-        Me.UserAvatar.Size = New System.Drawing.Size(200, 200)
-        Me.UserAvatar.TabIndex = 33
-        Me.UserAvatar.TabStop = False
+        Me.CSellButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CSellButton.Location = New System.Drawing.Point(227, 184)
+        Me.CSellButton.Name = "CSellButton"
+        Me.CSellButton.Size = New System.Drawing.Size(107, 23)
+        Me.CSellButton.TabIndex = 32
+        Me.CSellButton.Text = "Cancel Sell"
+        Me.CSellButton.UseVisualStyleBackColor = True
         '
-        'ReturnButton
+        'SaleButton
         '
-        Me.ReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReturnButton.Location = New System.Drawing.Point(8, 391)
-        Me.ReturnButton.Name = "ReturnButton"
-        Me.ReturnButton.Size = New System.Drawing.Size(197, 23)
-        Me.ReturnButton.TabIndex = 32
-        Me.ReturnButton.Text = "Back To Main Menu"
-        Me.ReturnButton.UseVisualStyleBackColor = True
-        '
-        'MarketButton
-        '
-        Me.MarketButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MarketButton.Location = New System.Drawing.Point(8, 345)
-        Me.MarketButton.Name = "MarketButton"
-        Me.MarketButton.Size = New System.Drawing.Size(197, 23)
-        Me.MarketButton.TabIndex = 31
-        Me.MarketButton.Text = "Visit Marketplace"
-        Me.MarketButton.UseVisualStyleBackColor = True
-        '
-        'TrButton
-        '
-        Me.TrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.TrButton.Location = New System.Drawing.Point(623, 391)
-        Me.TrButton.Name = "TrButton"
-        Me.TrButton.Size = New System.Drawing.Size(97, 23)
-        Me.TrButton.TabIndex = 30
-        Me.TrButton.Text = "Trade"
-        Me.TrButton.UseVisualStyleBackColor = True
-        '
-        'SeButton
-        '
-        Me.SeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SeButton.Location = New System.Drawing.Point(520, 391)
-        Me.SeButton.Name = "SeButton"
-        Me.SeButton.Size = New System.Drawing.Size(97, 23)
-        Me.SeButton.TabIndex = 29
-        Me.SeButton.Text = "Sell"
-        Me.SeButton.UseVisualStyleBackColor = True
+        Me.SaleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SaleButton.Location = New System.Drawing.Point(555, 184)
+        Me.SaleButton.Name = "SaleButton"
+        Me.SaleButton.Size = New System.Drawing.Size(122, 23)
+        Me.SaleButton.TabIndex = 29
+        Me.SaleButton.Text = "List For Sale"
+        Me.SaleButton.UseVisualStyleBackColor = True
         '
         'OwnText
         '
-        Me.OwnText.Location = New System.Drawing.Point(581, 363)
+        Me.OwnText.Location = New System.Drawing.Point(288, 155)
         Me.OwnText.Name = "OwnText"
         Me.OwnText.Size = New System.Drawing.Size(138, 13)
         Me.OwnText.TabIndex = 28
@@ -246,7 +275,7 @@ Partial Class User
         'OwnLabel
         '
         Me.OwnLabel.ForeColor = System.Drawing.Color.Aqua
-        Me.OwnLabel.Location = New System.Drawing.Point(525, 363)
+        Me.OwnLabel.Location = New System.Drawing.Point(232, 155)
         Me.OwnLabel.Name = "OwnLabel"
         Me.OwnLabel.Size = New System.Drawing.Size(55, 13)
         Me.OwnLabel.TabIndex = 27
@@ -256,7 +285,7 @@ Partial Class User
         'StLabel
         '
         Me.StLabel.ForeColor = System.Drawing.Color.DarkSeaGreen
-        Me.StLabel.Location = New System.Drawing.Point(520, 303)
+        Me.StLabel.Location = New System.Drawing.Point(227, 95)
         Me.StLabel.Name = "StLabel"
         Me.StLabel.Size = New System.Drawing.Size(61, 13)
         Me.StLabel.TabIndex = 26
@@ -266,7 +295,7 @@ Partial Class User
         'EndLabel
         '
         Me.EndLabel.ForeColor = System.Drawing.Color.LightCoral
-        Me.EndLabel.Location = New System.Drawing.Point(517, 323)
+        Me.EndLabel.Location = New System.Drawing.Point(224, 115)
         Me.EndLabel.Name = "EndLabel"
         Me.EndLabel.Size = New System.Drawing.Size(64, 13)
         Me.EndLabel.TabIndex = 25
@@ -275,7 +304,7 @@ Partial Class User
         '
         'ExText
         '
-        Me.ExText.Location = New System.Drawing.Point(579, 323)
+        Me.ExText.Location = New System.Drawing.Point(286, 115)
         Me.ExText.Name = "ExText"
         Me.ExText.Size = New System.Drawing.Size(141, 13)
         Me.ExText.TabIndex = 24
@@ -284,7 +313,7 @@ Partial Class User
         '
         'FirstText
         '
-        Me.FirstText.Location = New System.Drawing.Point(579, 303)
+        Me.FirstText.Location = New System.Drawing.Point(286, 95)
         Me.FirstText.Name = "FirstText"
         Me.FirstText.Size = New System.Drawing.Size(141, 13)
         Me.FirstText.TabIndex = 23
@@ -295,7 +324,7 @@ Partial Class User
         '
         Me.DescText.BackColor = System.Drawing.Color.Navy
         Me.DescText.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.DescText.Location = New System.Drawing.Point(520, 237)
+        Me.DescText.Location = New System.Drawing.Point(227, 29)
         Me.DescText.MaxLength = 64
         Me.DescText.Multiline = True
         Me.DescText.Name = "DescText"
@@ -308,67 +337,18 @@ Partial Class User
         '
         'ItemText
         '
-        Me.ItemText.Location = New System.Drawing.Point(520, 215)
+        Me.ItemText.Location = New System.Drawing.Point(227, 7)
         Me.ItemText.Name = "ItemText"
         Me.ItemText.Size = New System.Drawing.Size(200, 13)
         Me.ItemText.TabIndex = 21
         Me.ItemText.Text = "[itemname]"
         Me.ItemText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'GoButton
-        '
-        Me.GoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GoButton.Location = New System.Drawing.Point(8, 315)
-        Me.GoButton.Name = "GoButton"
-        Me.GoButton.Size = New System.Drawing.Size(197, 23)
-        Me.GoButton.TabIndex = 19
-        Me.GoButton.Text = "Loot!"
-        Me.GoButton.UseVisualStyleBackColor = True
-        '
-        'InvList
-        '
-        Me.InvList.BackColor = System.Drawing.Color.DarkBlue
-        Me.InvList.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.InvList.FormattingEnabled = True
-        Me.InvList.Location = New System.Drawing.Point(235, 7)
-        Me.InvList.Name = "InvList"
-        Me.InvList.Size = New System.Drawing.Size(250, 407)
-        Me.InvList.TabIndex = 18
-        '
-        'CheckButton
-        '
-        Me.CheckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckButton.Location = New System.Drawing.Point(8, 285)
-        Me.CheckButton.Name = "CheckButton"
-        Me.CheckButton.Size = New System.Drawing.Size(197, 23)
-        Me.CheckButton.TabIndex = 17
-        Me.CheckButton.Text = "Get Loot Checks"
-        Me.CheckButton.UseVisualStyleBackColor = True
-        '
-        'ChText
-        '
-        Me.ChText.Location = New System.Drawing.Point(145, 265)
-        Me.ChText.Name = "ChText"
-        Me.ChText.Size = New System.Drawing.Size(60, 13)
-        Me.ChText.TabIndex = 16
-        Me.ChText.Text = "###"
-        Me.ChText.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'ChLabel
-        '
-        Me.ChLabel.ForeColor = System.Drawing.Color.DarkSalmon
-        Me.ChLabel.Location = New System.Drawing.Point(5, 265)
-        Me.ChLabel.Name = "ChLabel"
-        Me.ChLabel.Size = New System.Drawing.Size(145, 13)
-        Me.ChLabel.TabIndex = 15
-        Me.ChLabel.Text = "Checks Available:"
-        Me.ChLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
         'CrText
         '
         Me.CrText.BackColor = System.Drawing.Color.Navy
         Me.CrText.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.CrText.Location = New System.Drawing.Point(86, 237)
+        Me.CrText.Location = New System.Drawing.Point(558, 33)
         Me.CrText.MaxLength = 64
         Me.CrText.Name = "CrText"
         Me.CrText.ReadOnly = True
@@ -380,36 +360,62 @@ Partial Class User
         'CrLabel
         '
         Me.CrLabel.ForeColor = System.Drawing.Color.DarkGreen
-        Me.CrLabel.Location = New System.Drawing.Point(5, 240)
+        Me.CrLabel.Location = New System.Drawing.Point(455, 36)
         Me.CrLabel.Name = "CrLabel"
-        Me.CrLabel.Size = New System.Drawing.Size(75, 13)
+        Me.CrLabel.Size = New System.Drawing.Size(97, 13)
         Me.CrLabel.TabIndex = 13
         Me.CrLabel.Text = "Credits:"
         Me.CrLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'UnText
+        'PriceLabel
         '
-        Me.UnText.Location = New System.Drawing.Point(5, 215)
-        Me.UnText.Name = "UnText"
-        Me.UnText.Size = New System.Drawing.Size(200, 13)
-        Me.UnText.TabIndex = 12
-        Me.UnText.Text = "[username]"
-        Me.UnText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.PriceLabel.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PriceLabel.ForeColor = System.Drawing.Color.Lime
+        Me.PriceLabel.Location = New System.Drawing.Point(198, 133)
+        Me.PriceLabel.Name = "PriceLabel"
+        Me.PriceLabel.Size = New System.Drawing.Size(87, 13)
+        Me.PriceLabel.TabIndex = 35
+        Me.PriceLabel.Text = "Est. Value:"
+        Me.PriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'User
+        'SPText
         '
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.SPText.BackColor = System.Drawing.Color.Navy
+        Me.SPText.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.SPText.Location = New System.Drawing.Point(503, 132)
+        Me.SPText.MaxLength = 40
+        Me.SPText.Multiline = True
+        Me.SPText.Name = "SPText"
+        Me.SPText.ReadOnly = True
+        Me.SPText.Size = New System.Drawing.Size(174, 46)
+        Me.SPText.TabIndex = 44
+        Me.SPText.Text = "I am selling this."
+        '
+        'SPLabel
+        '
+        Me.SPLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.SPLabel.Location = New System.Drawing.Point(432, 138)
+        Me.SPLabel.Name = "SPLabel"
+        Me.SPLabel.Size = New System.Drawing.Size(70, 30)
+        Me.SPLabel.TabIndex = 45
+        Me.SPLabel.Text = "Sales Pitch:"
+        Me.SPLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Sell
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Navy
-        Me.ClientSize = New System.Drawing.Size(747, 468)
+        Me.ClientSize = New System.Drawing.Size(698, 263)
         Me.Controls.Add(Me.BackgroundPanel)
         Me.Controls.Add(Me.TitleBarPanel)
         Me.Font = New System.Drawing.Font("Lucida Console", 9.75!)
         Me.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.Name = "User"
+        Me.Name = "Sell"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "User"
+        Me.Text = "Sell"
         Me.TitleBarPanel.ResumeLayout(False)
         Me.CloseButton.ResumeLayout(False)
         Me.CloseButton.PerformLayout()
@@ -417,7 +423,6 @@ Partial Class User
         Me.MainPanel.ResumeLayout(False)
         Me.MainPanel.PerformLayout()
         CType(Me.LootAvatar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UserAvatar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -428,28 +433,28 @@ Partial Class User
     Friend WithEvents TitleBarLabel As Label
     Friend WithEvents BackgroundPanel As Panel
     Friend WithEvents MainPanel As Panel
-    Friend WithEvents CrLabel As Label
-    Friend WithEvents UnText As Label
-    Friend WithEvents ChText As Label
-    Friend WithEvents ChLabel As Label
-    Friend WithEvents CrText As TextBox
-    Friend WithEvents GoButton As Button
-    Friend WithEvents InvList As ListBox
-    Friend WithEvents CheckButton As Button
+    Friend WithEvents SellLabel As Label
+    Friend WithEvents PriceText As Label
+    Friend WithEvents LootAvatar As PictureBox
+    Friend WithEvents SaleButton As Button
+    Friend WithEvents OwnText As Label
+    Friend WithEvents OwnLabel As Label
     Friend WithEvents StLabel As Label
     Friend WithEvents EndLabel As Label
     Friend WithEvents ExText As Label
     Friend WithEvents FirstText As Label
     Friend WithEvents DescText As TextBox
     Friend WithEvents ItemText As Label
-    Friend WithEvents ReturnButton As Button
-    Friend WithEvents MarketButton As Button
-    Friend WithEvents TrButton As Button
-    Friend WithEvents OwnText As Label
-    Friend WithEvents OwnLabel As Label
-    Friend WithEvents UserAvatar As PictureBox
-    Friend WithEvents LootAvatar As PictureBox
-    Friend WithEvents PriceText As Label
+    Friend WithEvents CrText As TextBox
+    Friend WithEvents CrLabel As Label
     Friend WithEvents PriceLabel As Label
-    Friend WithEvents SeButton As Button
+    Friend WithEvents UnText As Label
+    Friend WithEvents StatusLabel As Label
+    Friend WithEvents CSellButton As Button
+    Friend WithEvents QText As TextBox
+    Friend WithEvents QLabel As Label
+    Friend WithEvents SaleText As TextBox
+    Friend WithEvents SaleLabel As Label
+    Friend WithEvents SPLabel As Label
+    Friend WithEvents SPText As TextBox
 End Class

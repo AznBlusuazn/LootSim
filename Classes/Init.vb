@@ -1,5 +1,6 @@
 ﻿Public Class Init
     Public Shared Sub InitMainMenu()
+        'TO DO: add version check here
         Dim gametitle As String = Application.ProductName & " v" & ClarkTribeGames.Converters.GetVersion(Application.ProductVersion)
         MainMenu.TitleBarLabel.Text = gametitle
         MainMenu.VersionLabel.Text = gametitle

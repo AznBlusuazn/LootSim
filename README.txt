@@ -1,7 +1,7 @@
 =============================================
 LOOTSIM by Geoff Clark
 PUBLISHED by CLARKTRIBEGAMES LLC
-VERSION ALPHA 0.0.000.0003
+VERSION ALPHA 0.0.000.0005
 =============================================
 
 SUPPORT THE DEVELOPMENT OF THIS GAME @ 
@@ -58,7 +58,7 @@ DEVELOPMENT NOTES
 
 [CURRENT UPDATE]
 
-ALPHA 0.0.000.0003 / Getting Started
+ALPHA 0.0.000.0005 / Getting Started
 
 - initial build
 - built main menu with key components
@@ -75,5 +75,9 @@ ALPHA 0.0.000.0003 / Getting Started
 - added settings.cfg for retaining username login (encrypted)
 - added check if login information in save data is accurate or not
 - added user panel for viewing user information and inventory
+- added ai table to cloud db for ai marketplace actions
+- created share class for share subs and functions
+- added item sale form
+- added ability to post items for sale on marketplace
 
 =============================================
